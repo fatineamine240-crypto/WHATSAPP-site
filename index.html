@@ -4,13 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>★ نقابة SAIROON الأسطورية ★</title>
-  
-  <!-- الخطوط -->
+
+  <!-- Meta Tags للمشاركة فـ واتساب وفيسبوك -->
+  <meta property="og:title" content="★ نقابة SAIROON الأسطورية ★" />
+  <meta property="og:description" content="أقوى نقابة على الواتساب، فعاليات ممتعة وقوانين صارمة وأدمنية حاسمين!" />
+  <meta property="og:image" content="https://i.postimg.cc/RZ0X5rFc/Screenshot-2025-08-29-16-51-18-03.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sairoonv1.netlify.app" /> <!-- غيّر هذا بالرابط ديالك فـ نتليفي -->
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="★ نقابة SAIROON الأسطورية ★" />
+  <meta name="twitter:description" content="انضم لأقوى نقابة فيها فعاليات وقوانين مشددة وأعضاء أسطوريين!" />
+  <meta name="twitter:image" content="https://i.postimg.cc/RZ0X5rFc/Screenshot-2025-08-29-16-51-18-03.jpg" />
+
+  <!-- الخط -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
 
-  <!-- CSS داخلي كامل -->
+  <!-- CSS داخلي -->
   <style>
-    /* الخط العام */
     body {
       font-family: 'Cairo', sans-serif;
       margin: 0;
@@ -24,7 +36,6 @@
       text-align: center;
     }
 
-    /* تأثير Fade In */
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
@@ -36,7 +47,6 @@
       transform: translateY(0);
     }
 
-    /* الصورة الدائرية */
     .profile-img {
       width: 180px;
       height: 180px;
@@ -53,7 +63,6 @@
       box-shadow: 0 15px 30px rgba(0,255,0,0.7);
     }
 
-    /* Header */
     header h1 {
       font-size: 3rem;
       color: #10b981;
@@ -70,7 +79,6 @@
       text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     }
 
-    /* Navigation buttons */
     nav {
       display: flex;
       flex-direction: column;
@@ -99,17 +107,18 @@
       background-position: right;
     }
 
-    nav a:nth-child(1) { 
+    nav a:nth-child(1) {
       background-image: linear-gradient(45deg, #16a34a, #22c55e);
     }
-    nav a:nth-child(2) { 
+
+    nav a:nth-child(2) {
       background-image: linear-gradient(45deg, #f59e0b, #facc15);
     }
-    nav a:nth-child(3) { 
+
+    nav a:nth-child(3) {
       background-image: linear-gradient(45deg, #2563eb, #3b82f6);
     }
 
-    /* Join button */
     .join-btn {
       display: inline-block;
       padding: 1.2rem 2.2rem;
@@ -130,7 +139,6 @@
       background: linear-gradient(45deg, #16a34a, #22c55e);
     }
 
-    /* Footer */
     footer {
       text-align: center;
       color: #9ca3af;
@@ -149,7 +157,6 @@
       transform: scale(1.05);
     }
 
-    /* Responsive */
     @media (min-width: 768px) {
       nav {
         flex-direction: row;
@@ -159,8 +166,8 @@
 </head>
 <body>
 
-  <!-- الصورة الدائرية -->
-  <img src="رابط_الصورة_هنا" alt="SAIROON" class="profile-img fade-in">
+  <!-- الصورة -->
+  <img src="https://i.postimg.cc/RZ0X5rFc/Screenshot-2025-08-29-16-51-18-03.jpg" alt="SAIROON" class="profile-img fade-in">
 
   <!-- Header -->
   <header class="fade-in">
@@ -170,14 +177,14 @@
     </p>
   </header>
 
-  <!-- Navigation Buttons -->
+  <!-- Navigation -->
   <nav class="fade-in">
     <a href="events.html">🔥 الفعاليات</a>
     <a href="rules.html">📜 القوانين</a>
     <a href="admins.html">🛡️ الأدمنية</a>
   </nav>
 
-  <!-- Join Button -->
+  <!-- Join -->
   <div class="fade-in">
     <a href="https://chat.whatsapp.com/Ifs200U74EoDMAvhYngm21?mode=ems_copy_t" target="_blank" class="join-btn">
       🚀 الإنضمام
@@ -189,7 +196,7 @@
     &copy; تم تطوير الموقع من طرف <strong>MA9MO3</strong>
   </footer>
 
-  <!-- Scripts لتحريك Fade In عند تحميل الصفحة -->
+  <!-- سكريبت التحريك -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.fade-in').forEach((el, index) => {
