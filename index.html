@@ -4,46 +4,143 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>★ نقابة هاشيرا الصخر ★</title>
-
-  <!-- ربط CSS الرئيسي مع التأثيرات -->
-  <link href="style.css" rel="stylesheet" />
-  <link href="input.css" rel="stylesheet" />
+  
+  <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- CSS داخلي كامل -->
+  <style>
+    /* الخط العام */
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f2937, #000000);
+      color: white;
+      min-height: 100vh;
+    }
+
+    /* تأثير Fade In */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .animate-fadeIn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Header */
+    header h1 {
+      font-size: 3rem;
+      color: #10b981;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 10px rgba(0,255,0,0.5);
+    }
+
+    header p {
+      color: #d1d5db;
+      font-size: 1.25rem;
+    }
+
+    /* Navigation buttons */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    nav a {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      color: white;
+      font-size: 1.125rem;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    nav a:nth-child(1) { background-color: #16a34a; }
+    nav a:nth-child(1):hover { background-color: #15803d; }
+    nav a:nth-child(2) { background-color: #f59e0b; }
+    nav a:nth-child(2):hover { background-color: #d97706; }
+    nav a:nth-child(3) { background-color: #2563eb; }
+    nav a:nth-child(3):hover { background-color: #1d4ed8; }
+
+    /* Join button */
+    .join-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      color: white;
+      background-color: #22c55e;
+      border-radius: 9999px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .join-btn:hover {
+      background-color: #16a34a;
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+      padding-bottom: 1.5rem;
+    }
+
+    footer a {
+      color: #10b981;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+  </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 to-black text-white font-[Cairo] min-h-screen">
+<body>
 
   <!-- Header -->
-  <header class="text-center py-16 px-4 fade-in">
-    <h1 class="text-4xl font-bold text-green-400 mb-4 animate-fadeIn">👑 نقابة الواتساب المثالية 👑</h1>
-    <p class="text-lg text-gray-300 animate-fadeIn delay-200">
-      مرحباً بك في أقوى نقابة على الواتساب، فعاليات، قوانين صارمة، وأدمنية حاسمين 🔥
-    </p>
+  <header class="fade-in">
+    <h1 class="animate-fadeIn">👑 نقابة الواتساب المثالية 👑</h1>
+    <p class="animate-fadeIn" style="transition-delay:0.2s;">مرحباً بك في أقوى نقابة على الواتساب، فعاليات، قوانين صارمة، وأدمنية حاسمين 🔥</p>
   </header>
 
   <!-- Navigation Buttons -->
-  <nav class="flex justify-center gap-6 flex-wrap mb-12 fade-in">
-    <a href="events.html" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-md text-white text-lg shadow-md transition-all box-hover">
-      🔥 الفعاليات
-    </a>
-    <a href="rules.html" class="bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-md text-white text-lg shadow-md transition-all box-hover">
-      📜 القوانين
-    </a>
-    <a href="admins.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md text-white text-lg shadow-md transition-all box-hover">
-      🛡️ الأدمنية
-    </a>
+  <nav class="fade-in">
+    <a href="events.html">🔥 الفعاليات</a>
+    <a href="rules.html">📜 القوانين</a>
+    <a href="admins.html">🛡️ الأدمنية</a>
   </nav>
 
   <!-- Join Button -->
-  <div class="text-center mb-16 fade-in">
-    <a href="https://chat.whatsapp.com/Ifs200U74EoDMAvhYngm21?mode=ems_copy_t" target="_blank"
-      class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-xl shadow-lg btn-hover transition-all duration-300">
+  <div class="text-center fade-in" style="margin-bottom:3rem;">
+    <a href="https://chat.whatsapp.com/Ifs200U74EoDMAvhYngm21?mode=ems_copy_t" target="_blank" class="join-btn">
       🚀 الإنضمام
     </a>
   </div>
 
   <!-- Footer -->
-  <footer class="text-center text-gray-500 text-sm pb-6 fade-in">
-    &copy; 2025 - جميع الحقوق محفوظة للمطور مقموع | MA9MO3 
+  <footer class="fade-in">
+    &copy; 2025 - جميع الحقوق محفوظة للمطور مقموع | MA9MO3
   </footer>
 
   <!-- Scripts لتحريك Fade In عند تحميل الصفحة -->
@@ -56,4 +153,4 @@
   </script>
 
 </body>
-      </html>
+</html>
