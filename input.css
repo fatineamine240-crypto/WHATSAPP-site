@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll smooth لجميع الروابط */
+html {
+  scroll-behavior: smooth;
+}
+
+/* إضافة التأثير Fade In لكل الأقسام */
+section {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
