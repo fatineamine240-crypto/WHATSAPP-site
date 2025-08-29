@@ -1,5 +1,5 @@
 <h1 align="center">
-  ⚡ <span style="color:#00FF00;">مـوقـع غـروب الـواتـسـاب الأسـطـوري</span> ⚡🟢
+  ⚡ <span style="color:#00FF00;">مـوقـع غـروب الـواتـسـاب الأسـطـوري</span> ⚡
 </h1>
 
 <p align="center">
@@ -35,7 +35,7 @@
 ## 🛠️ كيفاش تخدم عليه؟
 
 ```bash
-git clone https://github.com/username/repo-name.git
-cd repo-name
+git https://github.com/fatineamine240-crypto.git
+cd WHATSAPP-site
 npm install
 npx tailwindcss -i ./input.css -o ./style.css --watch
