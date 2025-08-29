@@ -1,5 +1,5 @@
 <h1 align="center">
-  🟢⚡ <span style="color:#00FF00;">مـوقـع غـروب الـواتـسـاب الأسـطـوري</span> ⚡🟢
+  ⚡ <span style="color:#00FF00;">مـوقـع غـروب الـواتـسـاب الأسـطـوري</span> ⚡🟢
 </h1>
 
 <p align="center">
@@ -28,7 +28,7 @@
 
 ## 📎 رابط الغروب
 
-[![انضم الآن](https://img.shields.io/badge/%D8%A7%D9%86%D8%B6%D9%85_%D8%A7%D9%84%D8%A2%D9%86-%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8-green?style=for-the-badge&logo=whatsapp)](https://chat.whatsapp.com/رابط-الغروب-ديالك)
+[![انضم الآن](https://img.shields.io/badge/%D8%A7%D9%86%D8%B6%D9%85_%D8%A7%D9%84%D8%A2%D9%86-%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8-green?style=for-the-badge&logo=whatsapp)](https://chat.whatsapp.com/Ifs200U74EoDMAvhYngm21?mode=ems_copy_t)
 
 ---
 
