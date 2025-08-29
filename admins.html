@@ -4,44 +4,126 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>الأدمنية | نقابة هاشيرا الصخر</title>
-  <link href="style.css" rel="stylesheet" />
-  <link href="input.css" rel="stylesheet" />
+  
+  <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- CSS داخلي كامل -->
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f2937, #000000);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .animate-fadeIn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #60a5fa;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 10px rgba(96,165,250,0.5);
+    }
+
+    header p {
+      color: #d1d5db;
+      font-size: 1.25rem;
+    }
+
+    main {
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .admin-card {
+      background-color: #1f2937;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .admin-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    .admin-card h2 {
+      color: #60a5fa;
+      margin-bottom: 0.5rem;
+    }
+
+    .admin-card a {
+      color: #22c55e;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .admin-card a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+      padding-bottom: 1.5rem;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+  </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 to-black text-white font-[Cairo] min-h-screen">
+<body>
 
   <!-- Header -->
-  <header class="text-center py-12 px-4 fade-in">
-    <h1 class="text-4xl font-bold text-blue-400 mb-3 animate-fadeIn">🛡️ الأدمنية 🛡️</h1>
-    <p class="text-gray-300 text-lg animate-fadeIn delay-200">
+  <header class="fade-in">
+    <h1 class="animate-fadeIn">🛡️ الأدمنية 🛡️</h1>
+    <p class="animate-fadeIn" style="transition-delay:0.2s;">
       هنا كاين الإمبراطور ونائب الإمبراطور وروابط مباشرة باش تقدر تتواصل معاهم على واتساب
     </p>
   </header>
 
   <!-- Admins Section -->
-  <main class="px-6 md:px-20 py-10 space-y-6">
-
-    <!-- الإمبراطور -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-blue-300 mb-2">👑 الإمبراطور - بان</h2>
-      <a href="https://wa.me/+212638826196" target="_blank" class="text-green-400 hover:underline btn-hover">
-        💬 مراسلة على واتساب
-      </a>
+  <main>
+    <div class="admin-card fade-in">
+      <h2>👑 الإمبراطور - بان</h2>
+      <a href="https://wa.me/+212638826196" target="_blank">💬 مراسلة على واتساب</a>
     </div>
 
-    <!-- نائب الإمبراطور -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-blue-300 mb-2">🛡️ نائب الإمبراطور - لوفي</h2>
-      <a href="https://wa.me/+967734112374" target="_blank" class="text-green-400 hover:underline btn-hover">
-        💬 مراسلة على واتساب
-      </a>
+    <div class="admin-card fade-in">
+      <h2>🛡️ نائب الإمبراطور - لوفي</h2>
+      <a href="https://wa.me/+967734112374" target="_blank">💬 مراسلة على واتساب</a>
     </div>
-
   </main>
 
   <!-- Navigation -->
-  <footer class="text-center mt-12 pb-6 fade-in">
-    <a href="index.html" class="text-blue-400 hover:underline text-lg btn-hover">🔙 رجوع للرئيسية</a>
+  <footer class="fade-in">
+    <a href="index.html">🔙 رجوع للرئيسية</a>
   </footer>
 
   <!-- Scripts لتحريك Fade In عند تحميل الصفحة -->
