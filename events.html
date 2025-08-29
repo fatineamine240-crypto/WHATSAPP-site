@@ -4,60 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>الفعاليات | نقابة هاشيرا الصخر </title>
-  <link href="style.css" rel="stylesheet" />
-  <link href="input.css" rel="stylesheet" />
+
+  <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- CSS داخلي كامل -->
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f2937, #000000);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .animate-fadeIn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #10b981;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 10px rgba(16,185,129,0.5);
+    }
+
+    header p {
+      color: #d1d5db;
+      font-size: 1.25rem;
+    }
+
+    main {
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .event-card {
+      background-color: #1f2937;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    .event-card h2 {
+      color: #22c55e;
+      margin-bottom: 0.5rem;
+    }
+
+    .event-card p {
+      color: #d1d5db;
+    }
+
+    footer {
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+      padding-bottom: 1.5rem;
+    }
+
+    footer a {
+      color: #10b981;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+  </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 to-black text-white font-[Cairo] min-h-screen">
+<body>
 
   <!-- Header -->
-  <header class="text-center py-12 px-4 fade-in">
-    <h1 class="text-4xl font-bold text-green-400 mb-3 animate-fadeIn">🔥 الفعاليات 🔥</h1>
-    <p class="text-gray-300 text-lg animate-fadeIn delay-200">
+  <header class="fade-in">
+    <h1 class="animate-fadeIn">🔥 الفعاليات 🔥</h1>
+    <p class="animate-fadeIn" style="transition-delay:0.2s;">
       هنا ستجد فعاليات ممتعة تنسيك هم الدراسة وتعب العمل في نقابة هاشيرا الصخر
     </p>
   </header>
 
   <!-- Events Section -->
-  <main class="px-6 md:px-20 py-10 space-y-6">
-
-    <!-- Event 1 -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-2xl font-bold text-green-300 mb-2">📌 فعالية 1: احزر الشخصية</h2>
-      <p class="text-gray-300">
-        يرسل مشرف المجموعة والمختص في الفعاليات صورة شخصية من أنمي وعلى المشاركين حزر اسمه ومن يحزر اسمه الأول يفوز
-      </p>
+  <main>
+    <div class="event-card fade-in">
+      <h2>📌 فعالية 1: احزر الشخصية</h2>
+      <p>يرسل مشرف المجموعة والمختص في الفعاليات صورة شخصية من أنمي وعلى المشاركين حزر اسمه ومن يحزر اسمه الأول يفوز</p>
     </div>
 
-    <!-- Event 2 -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-2xl font-bold text-green-300 mb-2">📌 فعالية 2: الكتابة</h2>
-      <p class="text-gray-300">
-        يقوم مختص الفعاليات بإرسال كلمات او جمل وأول من يعيد إرسالهم بدون غش يفوز
-      </p>
+    <div class="event-card fade-in">
+      <h2>📌 فعالية 2: الكتابة</h2>
+      <p>يقوم مختص الفعاليات بإرسال كلمات او جمل وأول من يعيد إرسالهم بدون غش يفوز</p>
     </div>
 
-    <!-- Event 3 -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-2xl font-bold text-green-300 mb-2">📌 فعالية 3: الكذب او الصدق</h2>
-      <p class="text-gray-300">
-        يختار مشرف الفعاليات عضو وعلى العضو اعطاء قول او قصة وعلى الاعضاء الآخرين معرفة هل يكذب او يقول الصراحة
-      </p>
+    <div class="event-card fade-in">
+      <h2>📌 فعالية 3: الكذب او الصدق</h2>
+      <p>يختار مشرف الفعاليات عضو وعلى العضو اعطاء قول او قصة وعلى الاعضاء الآخرين معرفة هل يكذب او يقول الصراحة</p>
     </div>
 
-    <!-- Event 4 -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-2xl font-bold text-green-300 mb-2">📌 فعالية 4: احزر الشخصية من الوصف</h2>
-      <p class="text-gray-300">
-        يقوم مشرف المسابقات بعمل تصويتات و يتم اختيار اكثر واحد له تصويتات وعليه أن يسأل المشرف أسئلة عن الشخصية وعلى المشرف اجابته بنعم أو لا أو من الممكن فقط
-      </p>
+    <div class="event-card fade-in">
+      <h2>📌 فعالية 4: احزر الشخصية من الوصف</h2>
+      <p>يقوم مشرف المسابقات بعمل تصويتات و يتم اختيار اكثر واحد له تصويتات وعليه أن يسأل المشرف أسئلة عن الشخصية وعلى المشرف اجابته بنعم أو لا أو من الممكن فقط</p>
     </div>
-
   </main>
 
   <!-- Navigation -->
-  <footer class="text-center mt-12 pb-6 fade-in">
-    <a href="index.html" class="text-green-400 hover:underline text-lg btn-hover">🔙 رجوع للرئيسية</a>
+  <footer class="fade-in">
+    <a href="index.html">🔙 رجوع للرئيسية</a>
   </footer>
 
   <!-- Scripts لتحريك Fade In عند تحميل الصفحة -->
