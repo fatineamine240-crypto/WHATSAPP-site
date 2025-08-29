@@ -4,104 +4,169 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>القوانين | نقابة هاشيرا الصخر</title>
-  <link href="style.css" rel="stylesheet" />
-  <link href="input.css" rel="stylesheet" />
+
+  <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- CSS داخلي كامل -->
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f2937, #000000);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .animate-fadeIn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #facc15;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 10px rgba(250,204,21,0.5);
+    }
+
+    header p {
+      color: #d1d5db;
+      font-size: 1.25rem;
+    }
+
+    main {
+      padding: 2.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .rule-card {
+      background-color: #1f2937;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .rule-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    .rule-card h2 {
+      color: #facc15;
+      margin-bottom: 0.5rem;
+    }
+
+    .rule-card p {
+      color: #d1d5db;
+    }
+
+    footer {
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+      padding-bottom: 1.5rem;
+    }
+
+    footer a {
+      color: #facc15;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-gray-900 to-black text-white font-[Cairo] min-h-screen">
+<body>
 
   <!-- Header -->
-  <header class="text-center py-12 px-4 fade-in">
-    <h1 class="text-4xl font-bold text-yellow-400 mb-3 animate-fadeIn">📜 القوانين 📜</h1>
-    <p class="text-gray-300 text-lg animate-fadeIn delay-200">
+  <header class="fade-in">
+    <h1 class="animate-fadeIn">📜 القوانين 📜</h1>
+    <p class="animate-fadeIn" style="transition-delay:0.2s;">
       هنا كاين جميع القوانين اللي خاص كل عضو يحترمها داخل النقابة
     </p>
   </header>
 
   <!-- Rules Section -->
-  <main class="px-6 md:px-20 py-10 space-y-6">
-
-    <!-- القوانين -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 1. احترام الجميع</h2>
-      <p class="text-gray-300">ماشي مقبول تجرح حد ولا تهين أي عضو.</p>
+  <main>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 1. احترام الجميع</h2>
+      <p>ماشي مقبول تجرح حد ولا تهين أي عضو.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 2. ممنوع السب والشتم</h2>
-      <p class="text-gray-300">كلماتك يكونو محترمين ديما.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 2. ممنوع السب والشتم</h2>
+      <p>كلماتك يكونو محترمين ديما.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 3. الخصوصية أولا</h2>
-      <p class="text-gray-300">ما تشاركش معلومات شخصية ديال الأعضاء بلا إذن.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 3. الخصوصية أولا</h2>
+      <p>ما تشاركش معلومات شخصية ديال الأعضاء بلا إذن.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 4. ممنوع الروابط الغريبة</h2>
-      <p class="text-gray-300">أي رابط مش موثوق يتحذف فوراً.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 4. ممنوع الروابط الغريبة</h2>
+      <p>أي رابط مش موثوق يتحذف فوراً.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 5. لا للعنصرية أو التمييز</h2>
-      <p class="text-gray-300">كل واحد مرحب به بلا فرق.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 5. لا للعنصرية أو التمييز</h2>
+      <p>كل واحد مرحب به بلا فرق.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 6. مشاركة الفعاليات</h2>
-      <p class="text-gray-300">حاول تكون نشيط وتشارك فكل الفعاليات.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 6. مشاركة الفعاليات</h2>
+      <p>حاول تكون نشيط وتشارك فكل الفعاليات.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 7. عدم التشويش</h2>
-      <p class="text-gray-300">ما تسبش المجموعات الفرعية بالرسائل المتكررة.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 7. عدم التشويش</h2>
+      <p>ما تسبش المجموعات الفرعية بالرسائل المتكررة.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 8. ممنوع النصب أو الاحتيال</h2>
-      <p class="text-gray-300">أي تصرف مش قانوني يؤدي للطرد.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 8. ممنوع النصب أو الاحتيال</h2>
+      <p>أي تصرف مش قانوني يؤدي للطرد.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 9. الالتزام بالأدب</h2>
-      <p class="text-gray-300">تعامل مع الكل بأدب حتى فالخلاف.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 9. الالتزام بالأدب</h2>
+      <p>تعامل مع الكل بأدب حتى فالخلاف.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 10. التفاعل الإيجابي</h2>
-      <p class="text-gray-300">لا تنشر شائعات أو مشاكل بدون سبب.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 10. التفاعل الإيجابي</h2>
+      <p>لا تنشر شائعات أو مشاكل بدون سبب.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 11. ممنوع الإعلانات</h2>
-      <p class="text-gray-300">أي إعلان شخصي يتم حذفه إلا بموافقة الإدارة.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 11. ممنوع الإعلانات</h2>
+      <p>أي إعلان شخصي يتم حذفه إلا بموافقة الإدارة.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 12. الوقت مهم</h2>
-      <p class="text-gray-300">احترم توقيت الفعاليات ما تحضر متأخر.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 12. الوقت مهم</h2>
+      <p>احترم توقيت الفعاليات ما تحضر متأخر.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 13. احترام الأدمنية</h2>
-      <p class="text-gray-300">أي قرار ديال الأدمن يحترم فوراً.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 13. احترام الأدمنية</h2>
+      <p>أي قرار ديال الأدمن يحترم فوراً.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 14. ممنوع النقاشات السامة</h2>
-      <p class="text-gray-300">أي كلام سلبي يؤدي للتنبيه.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 14. ممنوع النقاشات السامة</h2>
+      <p>أي كلام سلبي يؤدي للتنبيه.</p>
     </div>
-
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg box-hover fade-in">
-      <h2 class="text-xl font-bold text-yellow-300 mb-2">⚠️ 15. المشاركة مستمرة</h2>
-      <p class="text-gray-300">اللي يختفي بزاف بلا سبب يمكن يتعاقب.</p>
+    <div class="rule-card fade-in">
+      <h2>⚠️ 15. المشاركة مستمرة</h2>
+      <p>اللي يختفي بزاف بلا سبب يمكن يتعاقب.</p>
     </div>
-
   </main>
 
   <!-- Navigation -->
-  <footer class="text-center mt-12 pb-6 fade-in">
-    <a href="index.html" class="text-yellow-400 hover:underline text-lg btn-hover">🔙 رجوع للرئيسية</a>
+  <footer class="fade-in">
+    <a href="index.html">🔙 رجوع للرئيسية</a>
   </footer>
 
   <!-- Scripts لتحريك Fade In عند تحميل الصفحة -->
@@ -114,4 +179,4 @@
   </script>
 
 </body>
-        </html>
+</html>
