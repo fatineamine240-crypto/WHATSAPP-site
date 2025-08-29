@@ -3,99 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>الأدمنية | نقابة SAIROON </title>
+  <title>🛡️ الأدمنية | نقابة SAIROON 🛡️</title>
   
   <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet" />
 
   <!-- CSS داخلي كامل -->
   <style>
+    /* الخط العام والخلفية */
     body {
       font-family: 'Cairo', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #1f2937, #000000);
+      background: linear-gradient(135deg, #0f172a, #000000);
       color: white;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
+    /* Fade In */
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
       transition: all 0.8s ease-out;
     }
-
     .animate-fadeIn {
       opacity: 1;
       transform: translateY(0);
     }
 
+    /* Header */
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem 1rem;
+    }
     header h1 {
       font-size: 3rem;
       color: #60a5fa;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 10px rgba(96,165,250,0.5);
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 15px rgba(96,165,250,0.6);
     }
-
     header p {
       color: #d1d5db;
       font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
+    /* Main Section */
     main {
-      padding: 2.5rem 1.5rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 2rem;
+      width: 90%;
+      max-width: 600px;
+      margin-top: 2rem;
+      align-items: center;
     }
 
+    /* كروت الأدمنية */
     .admin-card {
-      background-color: #1f2937;
-      padding: 1.5rem;
+      background: linear-gradient(145deg, #1e293b, #0f172a);
+      padding: 1.8rem 2rem;
       border-radius: 1rem;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .admin-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    }
+    .admin-card h2 {
+      color: #60a5fa;
+      margin-bottom: 0.75rem;
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 5px rgba(96,165,250,0.5);
+    }
+    .admin-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.65rem 1.5rem;
+      font-size: 1.1rem;
+      background-color: #22c55e;
+      color: white;
+      border-radius: 9999px;
+      text-decoration: none;
       box-shadow: 0 5px 15px rgba(0,0,0,0.5);
       transition: all 0.3s ease;
     }
-
-    .admin-card:hover {
-      transform: translateY(-5px);
+    .admin-card a:hover {
+      background-color: #16a34a;
+      transform: scale(1.1);
       box-shadow: 0 10px 25px rgba(0,0,0,0.7);
     }
 
-    .admin-card h2 {
-      color: #60a5fa;
-      margin-bottom: 0.5rem;
-    }
-
-    .admin-card a {
-      color: #22c55e;
-      text-decoration: none;
+    /* زر الرجوع */
+    .back-btn {
+      margin-top: 3rem;
+      padding: 0.75rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #2563eb, #1d4ed8);
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
       transition: all 0.3s ease;
     }
-
-    .admin-card a:hover {
-      text-decoration: underline;
+    .back-btn:hover {
+      background: linear-gradient(90deg, #1d4ed8, #2563eb);
       transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
     }
 
+    /* Footer */
     footer {
       text-align: center;
       color: #9ca3af;
       font-size: 0.875rem;
-      padding-bottom: 1.5rem;
+      padding: 2rem 0;
     }
 
-    footer a {
-      color: #60a5fa;
-      text-decoration: none;
-      transition: all 0.3s ease;
+    /* Responsive */
+    @media(max-width: 500px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+      .admin-card h2 { font-size: 1.3rem; }
+      .admin-card a { font-size: 1rem; padding: 0.5rem 1.2rem; }
+      .back-btn { font-size: 1rem; padding: 0.5rem 1.5rem; }
     }
-
-    footer a:hover {
-      text-decoration: underline;
-      transform: scale(1.05);
-    }
-
   </style>
 </head>
 <body>
@@ -121,9 +162,12 @@
     </div>
   </main>
 
-  <!-- Navigation -->
+  <!-- Back Button -->
+  <button class="back-btn fade-in" onclick="location.href='index.html'">🔙 رجوع للرئيسية</button>
+
+  <!-- Footer -->
   <footer class="fade-in">
-    <a href="index.html">🔙 رجوع للرئيسية</a>
+    &copy; تم تطوير الموقع من طرف MA9MO3
   </footer>
 
   <!-- Scripts لتحريك Fade In عند تحميل الصفحة -->
@@ -136,4 +180,4 @@
   </script>
 
 </body>
-</html>
+  </html>
